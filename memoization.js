@@ -9,7 +9,7 @@ function memoryFunction(n) {
     for (i = 0; i <= n; i++) {
       sum = sum + i;
     }
-    memoryObject.num = 10000;
+    memoryObject[n] = sum;
     console.log('outside', sum);
     return sum;
   }
