@@ -2,16 +2,16 @@ let conditions = true;
 
 const proms = new Promise((resolve, reject) => {
   setTimeout(() => {
-    if (!conditions) {
-      resolve('Hello');
+    if (conditions) {
+      resolve("Hello");
     } else {
-      reject('This condition faild');
+      reject("This condition failed");
     }
   }, 2000);
 });
 
 proms
-  .then(result => {
+  .then((result) => {
     console.log(result);
   })
   .catch(function (error) {

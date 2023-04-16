@@ -5,9 +5,9 @@
 
 function test(n) {
   console.log(n);
-  if (n > 0) {
-    test(n - 1);
+  if (n < 10) {
+    test(n + 1);
   }
 }
 
-test(10);
+test(0);
